@@ -2,28 +2,43 @@
 #include <cs50.h>
 
 int main(void)
-
 {
-    printf("Give me a pyramid height betweeen 1-23: ");
+    //initialize n as an integer    
+    int n; 
     
-    int n = GetInt();
-    
-    if (n > 0 && n <= 23)
+    // do while loop to prompt user for height input between 1-23
+    do {
+        printf("Height: ");
+        n = GetInt();
         
-        for (int i = 0; i < n; i++);
+    if (n == 0)
+        {
+        return 0;
+        }
+    } while(n < 1 || n > 23);
+    
+    //for loop to count rows
+    for (int i = 0; i < n; i++)
+    
+        {
+        //for loop to print spaces
+        for (int j = 0; j < n-i-1; j++)
+        {    printf("%c", ' ');
+        } 
+            //for loop to print #s
+            for (int k = 0; k < i+2; k++)
+            {   printf("#");
+            }
+        
+        printf("\n");
+        }
+}       
+ 
+
          //print spaces
          //print hashes
-         char *h = "#";
          //print new line
-         printf("%touch README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/jmastrom/cs50x.git
-git push -u origin masters*%n\n", );
-            
-}
-//   char *s = "MyText";
-    unsigned int sz = 9;
-    char *pad = "########################################";
-    printf ("%.*s%s\n", (sz < strlen(s)) ? 0 : sz - strlen(s), pad, s);
+
+       
+
+
