@@ -1,6 +1,7 @@
-/*mario.c created for PSET1 of CS50x. Create a 'mario' pyramid from a user input of line height.
-    
-  Author: Jimmy Mastrom
+/*mario.c created for PSET1 of CS50x. Create a 'mario' 
+/ pyramid from a user input of line height.
+/   
+/ Author: Jimmy Mastrom
 */
 
 #include <stdio.h>
@@ -8,7 +9,7 @@
 
 int main(void)
 {
-    //initialize n as an integer    
+    // initialize n as an integer    
     int n; 
     
     // do while loop to prompt user for height input between 1-23
@@ -27,7 +28,7 @@ int main(void)
     
         {
         //for loop to print spaces
-        for (int j = 0; j < n-i-1; j++)
+        for (int j = 0; j < n - i - 1; j++)
         {    printf("%c", ' ');
         } 
             //for loop to print #s
